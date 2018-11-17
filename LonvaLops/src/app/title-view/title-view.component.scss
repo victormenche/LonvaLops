@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  // background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafy_2L7FDVUC2ZLUfNFedi9Wp734YWGMHinPhww7UXnrxxRWN');
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+h1 {
+  color: antiquewhite;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-size: 14vw;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+h2 {
+  color: antiquewhite;
+  margin-top: 0;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-size: 10vw;
+  font-weight: 100;
+  font-family: 'Kaushan Script', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 15vw;
+  }
+}
