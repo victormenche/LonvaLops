@@ -15,17 +15,26 @@
 .about p {
   font-size: 3vw;
 }
+.matcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .desc {
+  width: 30vw;
   margin-left: 0 !important;
   margin-right: 0 !important;
   display: flex;
   background-color: whitesmoke;
   margin: 10px;
+  flex-direction: column;
 }
 .desc img {
   border: 2px solid white;
 }
+
 .desc p {
+  margin-top: 0;
   padding: 1em;
 }
 
@@ -35,7 +44,18 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .about h1 {
+    font-size: 5vh;
+  }
+  .about p {
+    font-size: 3vh;
+  }
+  .matcards {
+    flex-direction: column;
+    justify-content: center;
+  }
   .desc {
+    width: 70vw;
     flex-direction: column;
   }
   .desc img {
