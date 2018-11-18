@@ -30,6 +30,8 @@
   flex-direction: column;
 }
 .desc img {
+  max-width: 60vw;
+  max-height: 50vh;
   border: 2px solid white;
 }
 
@@ -55,10 +57,11 @@
     justify-content: center;
   }
   .desc {
-    width: 70vw;
+    width: 90%;
     flex-direction: column;
   }
   .desc img {
+    max-width: 70vw;
     order: 1;
   }
 }
