@@ -1,31 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.scss'],
+  selector: 'app-bottom-bar',
+  templateUrl: './bottom-bar.component.html',
+  styleUrls: ['./bottom-bar.component.scss'],
 })
-export class AboutUsComponent implements OnInit {
+export class BottomBarComponent implements OnInit {
   constructor(
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer,
   ) {
     this.matIconRegistry.addSvgIcon(
-      `rat`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl(`../../assets/rat.svg`),
-    );
-    this.matIconRegistry.addSvgIcon(
-      `minilop`,
+      `facebook`,
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `../../assets/bunny.svg`,
+        `../../assets/iconmonstr-facebook-6.svg`,
       ),
     );
     this.matIconRegistry.addSvgIcon(
-      `carrot`,
+      `instagram`,
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        `../../assets/carrot.svg`,
+        `../../assets/iconmonstr-instagram-14.svg`,
       ),
     );
   }
